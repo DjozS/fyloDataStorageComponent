@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background: hsl(229, 57%, 11%) left 100% / 100% 50%  url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    font-family: 'Raleway', sans-serif;
+}
+.cloud{
+    display: flex;
+    background:white;
+    width:150px;
+    height:60px;
+    border-radius:5px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:-15%;
+    right:7%;
+
+}
+.triangle{
+    background: white;
+    position: absolute;
+    top:15%;
+    right:7%;
+    height:30px;
+    width:20px;
+    border-bottom-left-radius: 100%;
+}
+.icons{
+    display: flex;
+}
+.section1{
+    background: hsl(228, 56%, 26%);
+    padding:50px 200px 50px 40px;
+    border-radius:10px;
+    border-top-right-radius: 120px;
+    margin-right:30px;
+}
+.section2{
+    background:hsl(228, 56%, 26%);
+    border-radius:10px;
+    padding:50px 40px;
+    margin-top:60px;
+    position: relative;
+}
+.iconBack{
+    height:60px;
+    width:60px;
+    background:hsl(229, 57%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10px;
+    margin-right:10px;
+}
+.logo{
+    margin-bottom:40px;
+    width:160px;
+}
+h1{
+    color:hsl(229, 57%, 11%);
+    font-size:30px;
+}
+p{
+    color:white;
+}
+.opacityChange{
+    opacity: 0.7;
+}
+
+.container2{
+    background: hsl(229, 57%, 11%);
+    border-radius:10px;
+    padding:3px 130px 3px 3px;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.container3{
+    display: flex;
+    justify-content: space-between;
+}
+.bar{
+    width:300px;
+    height:15px;
+    border-radius:10px;
+    background:linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.spanWhite{
+    font-weight: 700;
+}
+.pBold{
+    font-weight: bold;
+    opacity: 0.7;
+}
+.gbLeft{
+    color:hsl(229, 7%, 55%);
+    font-size:12px;
+    font-weight: 700;
+    margin-left:5px;
+}
+.dot{
+    height:14px;
+    width:14px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    right:33%;
+    top:48.9%;
+}
+@media(max-width:500px){
+    body{
+        flex-direction: column;
+        align-items: center;
+        background: hsl(229, 57%, 11%) url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .triangle{
+        display: none;
+    }
+    .cloud{
+        top:83%;
+        right:27%;
+       width:200px;
+       height:70px;
+    }
+    section{
+        max-width:400px;
+    }
+    .section1{
+        margin-right:0;
+        margin-bottom:20px;
+    }
+    .section2{
+        margin:0;
+    }
+    .iconBack{
+       padding:0px 20px;
+    }
+    .bar{
+        width:225px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
